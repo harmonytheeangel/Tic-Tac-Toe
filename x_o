@@ -1,0 +1,117 @@
+import random
+
+
+"""
+Your task is to write a simple program which pretends to play tic-tac-toe with the user. To make it 
+all easier for you,
+ we've decided to simplify the board. Here are our assumptions:
+
+the computer (i.e., your program) should play the board using 'X's;
+the user (e.g., you) should play the board using 'O's;
+the first move belongs to the computer − it always puts its first 'X' in the middle of the board;
+all the squares are numbered row by row starting with 1 (see the example session below for
+ reference)
+the user inputs their move by entering the number of the square they choose − the number must be valid, 
+i.e., it must be an integer, it must be greater than 0 and less than 10, and it cannot point to a field 
+which is already occupied;
+the program checks if the board is over − there are four possible verdicts: the board should continue, the 
+board ends with a tie, you win, or the computer wins;
+the computer responds with its move and the check is repeated;
+don't implement any form of artificial intelligence − a random field choice made by the computer is good 
+enough for the board.
+"""
+import time
+
+board = [1 + x for x in range(9)] #numbers on the board
+
+print("*****************************")
+print("*         *         *       *")
+print(f"*    {board[0]}    *   {board[1]}     *   {board[2]}   *")
+print("*****************************")
+print("*        *         *        *")
+print(f"*    {board[3]}   *    {board[4]}    *    {board[5]}   *")
+print("*****************************")
+print("*        *         *        *")
+print(f"*    {board[6]}   *    {board[7]}    *    {board[8]}   *")
+print("*****************************\n")
+
+def winning_move( player):
+        print()
+        if board[0] == board[1] == board[2]  ==  player  or board[3] == board[4] == board[5] == player\
+           or board[6] == board[7] == board[8] == player or board[0] == board[4] or board[8] == player:
+                return board[0]
+
+def moves():
+    for x in board:
+        if x != int:
+            print("Draw")
+        else:
+            break
+
+# if winning_move( "x"):
+#     print("X has won")
+# elif moves():
+#     print("It is a Tie")
+# else:
+#     print("O has won")
+
+def draw():
+    for x in range(board):
+        if num in 
+computer = "x"
+user = "o"
+
+time.sleep(2)
+print("From the range of 1 - 9")
+user_position = ""
+
+board[4] = computer
+num = [1 , 2 , 3]
+x = 1
+
+
+while True:
+  computer_position = random.randrange(1 , 9)
+  user_position = int(input("Enter your number: \n"))
+  if computer_position != user_position and user_position in board:
+      board[computer_position - 1] = computer
+      board[user_position - 1] = user
+      print({"user": user_position , "computer": computer_position})
+
+      print("*****************************")
+      print("*         *         *       *")
+      print(f"*    {board[0]}    *   {board[1]}     *   {board[2]}   *")
+      print("*****************************")
+      print("*        *         *        *")
+      print(f"*    {board[3]}   *    {board[4]}    *    {board[5]}   *")
+      print("*****************************")
+      print("*        *         *        *")
+      print(f"*    {board[6]}   *    {board[7]}    *    {board[8]}   *")
+      print("*****************************\n")
+      #continue
+  elif computer_position == user_position and computer_position in board:
+      user_position = int(input("another number")) in board
+  else:
+      print("your move has been chosen")
+  print(board)
+
+# while True:
+#     computer_position = random.randrange(0, 9)  # computer random input
+#     while computer_position in board:
+#         print({"user": user_position , "computer": computer_position})
+#         break
+#         print("*****************************")
+#         print("*         *         *       *")
+#         print(f"*    {board[0]}    *   {board[1]}     *   {board[2]}   *")
+#         print("*****************************")
+#         print("*        *         *        *")
+#         print(f"*    {board[3]}   *    {board[4]}    *    {board[5]}   *")
+#         print("*****************************")
+#         print("*        *         *        *")
+#         print(f"*    {board[6]}   *    {board[7]}    *    {board[8]}   *")
+#         print("*****************************\n")
+#
+#         print(board)
+#     else:
+#         print("Your move has been chosen")
+# #winning_move(board)
