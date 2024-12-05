@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Dec  4 23:58:40 2024
-
-@author: Omolayo-Akinola
+group 21 - 41
 """
 
 import random
